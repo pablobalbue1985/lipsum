@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    overflow-y: auto;
+    line-height: 1.6;
+    font-size: 16px;
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center; 
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+    nav ul li {
+        position: relative;
+        margin: 0 10px; 
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            padding: 15px 40px; 
+        }
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    list-style: none;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-container {
+    margin: 0 auto;
+    max-width: 800px;
+    max-height: 650px;
+    overflow: hidden;
+}
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#galaxyBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+strong {
+    color: #0000ff; 
+}
+
+#cursos h2 {
+    text-align: center;
+    font-size: 10 px;
+    
+}
+.side-images {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    pointer-events: none; 
+}
+
+.side-image {
+    position: absolute;
+    max-width: 300px;
+    height: auto;
+}
+
+    .side-image.left {
+        left: 0;
+    }
+
+    .side-image.right {
+        right: 0;
+    }
+.audio-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+}
